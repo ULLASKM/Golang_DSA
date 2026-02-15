@@ -7,7 +7,7 @@ import "fmt"
 
 func RectangularStarPattern() {
 	fmt.Println("Pattern-1: Rectangular Star Pattern")
-	for i := 0; i < 5; i++ {
+	for range 5 {
 		for j := 0; j < 5; j++ {
 			fmt.Print("*")
 		}
@@ -20,7 +20,7 @@ func RectangularStarPattern() {
 
 func TriangleStarPattern() {
 	fmt.Println("Pattern-2: Right-Angled Triangle Pattern")
-	for i := 0; i < 5; i++ {
+	for i := range 5 {
 		for j := 0; j <= i; j++ {
 			fmt.Print("*")
 		}
@@ -33,7 +33,7 @@ func TriangleStarPattern() {
 
 func TriangleNumberPattern() {
 	fmt.Println("Pattern - 3: Right-Angled Number Pyramid")
-	for i := 0; i < 5; i++ {
+	for i := range 5 {
 		for j := 0; j <= i; j++ {
 			fmt.Print(j + 1)
 		}
@@ -46,7 +46,7 @@ func TriangleNumberPattern() {
 
 func TriangleNumberPatternII() {
 	fmt.Println("Pattern - 4: Right-Angled Number Pyramid - II")
-	for i := 0; i < 5; i++ {
+	for i := range 5 {
 		for j := 0; j <= i; j++ {
 			fmt.Print(i + 1)
 		}
@@ -85,7 +85,7 @@ func InvertedTriangleNumberPattern() {
 
 func PyramidStarPattern() {
 	fmt.Println("Pattern - 7: Star Pyramid")
-	for i := 0; i < 5; i++ {
+	for i := range 5 {
 		for k := 5; k > i; k-- {
 			fmt.Print(" ")
 		}
@@ -101,7 +101,7 @@ func PyramidStarPattern() {
 
 func RectangularStarHollowPattern() {
 	fmt.Println("Pattern-8: Rectangular Star Hollow Pattern")
-	for i := 0; i < 5; i++ {
+	for i := range 5 {
 		for j := 0; j < 5; j++ {
 			if i == 0 || i == 4 {
 				fmt.Print("*")
